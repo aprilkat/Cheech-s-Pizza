@@ -1,0 +1,40 @@
+/*
+Author:  April Bollinger
+Date:    07/8/2020
+Project: Cheech's Pizza Parlor
+*/
+
+
+/* order styles to help inbetween the break points */
+form {
+  width: 43%;
+}
+
+.reviews {
+  width: 44%;
+}
+
+@media screen and (max-width: 568px) {
+
+  /* Menu Styles */
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  /* Order Styles */
+  form {
+    width: 100%;
+  }
+
+  .reviews {
+    width: 100%;
+  }
+}

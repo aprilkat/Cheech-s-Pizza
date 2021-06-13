@@ -1,0 +1,159 @@
+/*
+Author:  April Bollinger
+Date:    07/8/2020
+Project: Cheech's Pizza Parlor
+*/
+
+
+/* Basic Styles */
+body {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+}
+
+header {
+  width: 100%;
+  color: inherit;
+  background-color: red;
+  background-size: cover;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 1.6em;
+}
+
+h1 {
+  flex: 1 auto;
+  color: white;
+  background: black;
+}
+
+.navigation {
+  background-color: black;
+  color: inherit;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.3em
+}
+
+a {
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+}
+
+a:link {
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  background-color: inherit;
+  color: grey;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: inherit;
+  color: red;
+  text-decoration: underline;
+}
+
+/* Menu Styles */
+.menupics {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sectionhead {
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+img {
+  width: 350px;
+}
+
+.othertop, .crusts, .sauces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.end {
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: black;
+  color: white;
+  margin: 8px;
+}
+
+/* order.html */
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 48%;
+}
+
+.headlabel {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+fieldset {
+  margin: 20px 20px 0px 20px;
+}
+
+label {
+  padding-left: 15px;
+  padding-bottom: 10px
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.submit {
+  width: 43%;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: black;
+  color: black;
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+  width: 46%;
+  margin: 30px;
+}
+
+.reviews>p, h4 {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.fa-facebook-square, .fa-twitter-square {
+  color: red;
+  font-size: 3em;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+      Author:  April Bollinger
+      Date:    07/8/2020
+      Project: Cheech's Pizza Parlor
+    -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e87d1030ee.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="responsiveStyles.css" media="screen and (max-width: 1198px)">
+  <title>Cheech's Pizza/order</title>
+</head>
+
+<body>
+  <header>
+    <h1>Cheech's<br>Pizza</h1>
+  </header>
+
+  <div class="navigation">
+
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order Online</a>
+    <a href="Location.html">Our Location</a>
+
+  </div>
+
+  <form action="thankyou.html" method="post">
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="fname">First Name:</label>
+      <input autofocus type="text" id="fname" required>
+      <label for="lname"><br>Last Name:</label>
+      <input type="text" id="lname" required>
+      <label for="phone"><br>Phone Number</label>
+      <input type="tel" id="phone" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Popular Pizza Choices</legend>
+      <label for="popularpizzas1">Choice #1</label>
+      <input list="popularpizzachoices1" id="popularpizzas1">
+      <datalist id="popularpizzachoices1">
+        <option value="None">
+        <option value="Build">
+        <option value="Supreme Pizza">
+        <option value="Meat Lover's Pizza">
+        <option value="Cheese Pizza">
+        <option value="Pepperoni Pizza">
+        <option value="Hawaiian Pizza">
+        <option value="Vegetable Pizza">
+      </datalist>
+
+      <label for="popularpizzas2"><br>Choice #2</label>
+      <input list="popularpizzachoices2" id="popularpizzas2">
+      <datalist id="popularpizzachoices2">
+        <option value="None">
+        <option value="Build">
+        <option value="Supreme Pizza">
+        <option value="Meat Lover's Pizza">
+        <option value="Cheese Pizza">
+        <option value="Pepperoni Pizza">
+        <option value="Hawaiian Pizza">
+        <option value="Vegetable Pizza">
+      </datalist>
+
+      <label for="popularpizzas3"><br>Choice #3</label>
+      <input list="popularpizzachoices3" id="popularpizzas3">
+      <datalist id="popularpizzachoices3">
+        <option value="None">
+        <option value="Build">
+        <option value="Supreme Pizza">
+        <option value="Meat Lover's Pizza">
+        <option value="Cheese Pizza">
+        <option value="Pepperoni Pizza">
+        <option value="Hawaiian Pizza">
+        <option value="Vegetable Pizza">
+      </datalist>
+
+      <label for="popularpizzas4"><br>Choice #4</label>
+      <input list="popularpizzachoices4" id="popularpizzas4">
+      <datalist id="popularpizzachoices4">
+        <option value="None">
+        <option value="Build">
+        <option value="Supreme Pizza">
+        <option value="Meat Lover's Pizza">
+        <option value="Cheese Pizza">
+        <option value="Pepperoni Pizza">
+        <option value="Hawaiian Pizza">
+        <option value="Vegetable Pizza">
+      </datalist>
+    </fieldset>
+
+    <fieldset>
+      <legend>Build Your Own</legend>
+
+      <fieldset>
+        <label for="amount">Amount of Pizzas Being Ordered</label>
+        <input type="number" id="amount" min="1" max="10">
+      </fieldset>
+
+      <fieldset>
+        <label class="headlabel"><br>Crust Options:<br></label>
+
+        <input type="radio" id="thincrust" name="crust">
+        <label for="thincrust">Thin Crust<br></label>
+
+        <input type="radio" id="handtossed" name="crust">
+        <label for="handtossed">Handtossed Crust<br></label>
+
+        <input type="radio" id="brooklynstyle" name="crust">
+        <label for="brooklynstyle">Brooklyn Style Crust<br></label>
+
+        <input type="radio" id="deepdish" name="crust">
+        <label for="deepdish">Deep Dish Crust<br></label>
+
+      </fieldset>
+
+      <fieldset>
+        <label class="headlabel">Toppings:<br></label>
+
+        <input type="checkbox" id="cheese">
+        <label for="cheese">Extra Cheese<br></label>
+
+        <input type="checkbox" id="mushrooms">
+        <label for="mushrooms">Mushrooms<br></label>
+
+        <input type="checkbox" id="greenpeppers">
+        <label for="greenpeppers">Green Peppers<br></label>
+
+        <input type="checkbox" id="bananapeppers">
+        <label for="bananapeppers">Banana Peppers<br></label>
+
+        <input type="checkbox" id="onions">
+        <label for="onions">Onions<br></label>
+
+        <input type="checkbox" id="tomatoes">
+        <label for="tomatoes">Tomatoes<br></label>
+
+        <input type="checkbox" id="greenolives">
+        <label for="greenolives">Green Olives<br></label>
+
+        <input type="checkbox" id="blackolives">
+        <label for="blackolives">Black Olives<br></label>
+
+        <input type="checkbox" id="pineapple">
+        <label for="pineapple">Pineapple<br></label>
+
+        <input type="checkbox" id="spinach">
+        <label for="spinach">Spinach<br></label>
+
+        <input type="checkbox" id="pepperoni">
+        <label for="pepperoni">Pepperoni<br></label>
+
+        <input type="checkbox" id="sausage">
+        <label for="sausage">Sausage<br></label>
+
+        <input type="checkbox" id="canadianbacon">
+        <label for="canadianbacon">Canadian Bacon<br></label>
+
+      </fieldset>
+
+      <fieldset>
+        <label class="headlabel">Sauces:<br></label>
+
+        <input type="radio" id="garlicparmesonsauce">
+        <label for="garlicparmesonsauce">Garlic Parmeson Sauce<br></label>
+
+        <input type="radio" id="tomatosauce">
+        <label for="tomatosauce">Tomato Sauce<br></label>
+
+        <input type="radio" id="alfredosauce">
+        <label for="alfredosauce">Alfredo Sauce<br></label>
+
+      </fieldset>
+
+    </fieldset>
+
+    <input class="submit" type="submit" name="Submit" value="Submit">
+  </form>
+
+  <div class="reviews">
+    <h4>Customer Reviews</h4>
+    <p>
+      Cheech's has some of the best pizza in the area.
+      Lots of different options and great service.
+      It became our go to pizza place. - Mary Anders
+    </p>
+    <p>
+      Suprisingly good pizza. Definitely looking forward
+      to going back to eat more. Great service too.
+      Everyone was very friendly. - Steve James
+    </p>
+    <p>
+      I really enjoyed their pizza. Their restuarant was
+      really comfortable. I've gone back many times since. - John Doe
+    </p>
+    <p>
+      We went for my son's birthday and had a great time.
+      They gave my son a free desert pizza. he loved it.
+      We've gone back many times since, including a couple more of
+      my son's birthdays. - Jane Doe
+    </p>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-twitter-square"></i>
+  </div>
+
+  <div class="end">
+    <footer>
+      <p>3742 N. Garfield Ave<br> Stanton, Michigan 74823</p>
+      <p>Call Us<br> Phone: (593)472-8374</p>
+      <p>&copy; April Bollinger</p>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
